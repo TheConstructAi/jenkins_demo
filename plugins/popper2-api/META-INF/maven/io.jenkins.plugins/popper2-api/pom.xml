@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>io.jenkins.plugins</groupId>
   <artifactId>popper2-api</artifactId>
-  <version>2.9.3-1</version>
+  <version>2.10.1-1</version>
   <packaging>hpi</packaging>
   <name>Popper.js 2 API Plugin</name>
   <description>Provides Popper.js 2.x for Jenkins plugins.</description>
@@ -26,7 +26,7 @@
   <scm>
     <connection>scm:git:git://github.com/jenkinsci/popper2-api-plugin.git</connection>
     <developerConnection>scm:git:git@github.com:jenkinsci/popper2-api-plugin.git</developerConnection>
-    <tag>v2.9.3-1</tag>
+    <tag>v2.10.1-1</tag>
     <url>https://github.com/jenkinsci/popper2-api-plugin</url>
   </scm>
   <distributionManagement>
@@ -86,8 +86,8 @@
       <scope>provided</scope>
       <exclusions>
         <exclusion>
-          <artifactId>annotation-indexer</artifactId>
           <groupId>org.jenkins-ci</groupId>
+          <artifactId>annotation-indexer</artifactId>
         </exclusion>
       </exclusions>
     </dependency>

@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>io.jenkins.plugins</groupId>
   <artifactId>bootstrap5-api</artifactId>
-  <version>5.1.0-3</version>
+  <version>5.1.1-1</version>
   <packaging>hpi</packaging>
   <name>Bootstrap 5 API Plugin</name>
   <description>Provides Bootstrap 5 for Jenkins plugins.</description>
@@ -26,7 +26,7 @@
   <scm>
     <connection>scm:git:git://github.com/jenkinsci/bootstrap5-api-plugin.git</connection>
     <developerConnection>scm:git:git@github.com:jenkinsci/bootstrap5-api-plugin.git</developerConnection>
-    <tag>v5.1.0-3</tag>
+    <tag>v5.1.1-1</tag>
     <url>https://github.com/jenkinsci/bootstrap5-api-plugin</url>
   </scm>
   <distributionManagement>
@@ -43,7 +43,7 @@
     <dependency>
       <groupId>io.jenkins.plugins</groupId>
       <artifactId>popper2-api</artifactId>
-      <version>2.9.3-1</version>
+      <version>2.10.1-1</version>
       <scope>compile</scope>
     </dependency>
     <dependency>

@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: jglick
+Build-Jdk: 1.8.0_265
+Extension-Name: build-token-root
+Specification-Title: Lets build and related REST build triggers be acc
+ essed even when anonymous users cannot see Jenkins.
+Implementation-Title: build-token-root
+Implementation-Version: 1.7
+Group-Id: org.jenkins-ci.plugins
+Short-Name: build-token-root
+Long-Name: Build Authorization Token Root Plugin
+Url: https://github.com/jenkinsci/build-token-root-plugin
+Minimum-Java-Version: 1.8
+Plugin-Version: 1.7
+Hudson-Version: 2.176.4
+Jenkins-Version: 2.176.4
+Plugin-Developers: Jesse Glick:jglick:jglick@cloudbees.com
+Plugin-License-Name: MIT License
+Plugin-License-Url: https://opensource.org/licenses/MIT
+Plugin-ScmUrl: https://github.com/jenkinsci/build-token-root-plugin
+
