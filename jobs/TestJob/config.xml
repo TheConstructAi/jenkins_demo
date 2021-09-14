@@ -19,7 +19,7 @@ ls -al
 env | grep ROS
 roslaunch publisher_example move.launch &amp;
 MOVE_ID=$!
-sleep 15s
+sleep 30s
 kill $MOVE_ID
 roslaunch publisher_example stop.launch &amp;
 STOP_ID=$!
