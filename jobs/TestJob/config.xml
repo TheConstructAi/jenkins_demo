@@ -1,5 +1,6 @@
 <?xml version='1.1' encoding='UTF-8'?>
 <project>
+  <actions/>
   <description>A sample job running some console scripts</description>
   <keepDependencies>false</keepDependencies>
   <properties/>
@@ -13,10 +14,18 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>echo &quot;Starting job...&quot;
+      <command>pwd
 ls -al
 env | grep ROS
-roslaunch publisher_example move.launch || true
+roslaunch publisher_example move.launch &amp;
+MOVE_ID=$!
+sleep 15s
+kill $MOVE_ID
+roslaunch publisher_example stop.launch &amp;
+STOP_ID=$!
+sleep 5s
+kill $STOP_ID
+rosservice call /gazebo/reset_simulation &quot;{}&quot;
 echo &quot;Job finished&quot;</command>
       <configuredLocalRules/>
     </hudson.tasks.Shell>
