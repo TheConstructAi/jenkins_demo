@@ -1,0 +1,22 @@
+Started on Sep 13, 2021 10:41:40 PM
+Started by event from 140.82.115.100 ⇒ http://54.73.121.76:8080/github-webhook/ on Mon Sep 13 22:41:40 UTC 2021
+Polling SCM changes on master
+Using strategy: Default
+[poll] Last Built Revision: Revision 29daf49e3980bb899a1ec261eee098ca3f6683b1 (refs/remotes/origin/master)
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /home/ubuntu/jenkins/workspace/Test Job/.git # timeout=10
+Fetching changes from the remote Git repositories
+ > git config remote.origin.url https://github.com/TheConstructAi/jenkins_demo.git # timeout=10
+Fetching upstream changes from https://github.com/TheConstructAi/jenkins_demo.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.17.1'
+ > git fetch --tags --progress -- https://github.com/TheConstructAi/jenkins_demo.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+Polling for changes in
+Seen branch in repository origin/demo_4000
+Seen branch in repository origin/master
+Seen 2 remote branches
+ > git show-ref --tags -d # timeout=10
+ > git log --full-history --no-abbrev --format=raw -M -m 29daf49e3980bb899a1ec261eee098ca3f6683b1..21a5d97d448aeafa07b0c67dd19214bd3096deba # timeout=10
+Done. Took 0.63 sec
+Changes found
