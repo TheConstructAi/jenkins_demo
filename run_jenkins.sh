@@ -64,4 +64,5 @@ else
     # This is to ensure all Jenkins config files are saved for the
     # next session on the Academy
     chmod -R 777 $JENKINS_HOME
+    rm -rf ~/run_jenkins* || true
 fi
