@@ -53,7 +53,7 @@ else
     # This is just for your convenience
     STATE_FILE=~/jenkins__pid__url.txt
     touch $STATE_FILE
-    echo "To kill Jenkins, run:" > $STATE_FILE
+    echo "To stop Jenkins, run:" > $STATE_FILE
     echo "kill $JENKINS_PID" >> $STATE_FILE
     echo "" >> $STATE_FILE
     echo "Jenkins URL: " >> $STATE_FILE
