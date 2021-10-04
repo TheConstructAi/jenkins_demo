@@ -21,8 +21,8 @@ INSTANCE_ID=`curl -s http://169.254.169.254/latest/meta-data/instance-id`
 URL=`echo "https://$INSTANCE_ID.robotigniteacademy.com/$SLOT_PREFIX/jenkins"`
 curl -X POST "$URL/buildByToken/build?job=TestJob&token=J3nkinsT0k3n"
 
-# Wait for 30 secs, kill Jenkins and clean up
-sleep 40s
+# Wait for 45 secs, kill Jenkins and clean up
+sleep 45s
 kill $JENKINS_PID &
 cd ~
 sleep 5s
