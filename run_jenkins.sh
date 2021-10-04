@@ -17,7 +17,7 @@ sudo apt-get install -y openjdk-8-jre
 
 # Download the Jenkins .war file, if not there already
 cd ~/webpage_ws/jenkins/
-JENKINS_FILE="$JENKINS_HOME/jenkins.war"
+JENKINS_FILE="/home/user/jenkins.war"
 if [ ! -f "$JENKINS_FILE" ]; then
     wget https://updates.jenkins.io/download/war/2.303.1/jenkins.war
 fi
