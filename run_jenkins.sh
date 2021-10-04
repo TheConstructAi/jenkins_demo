@@ -8,7 +8,7 @@ set -e
 # And then set the JENKINS_HOME environment variable. This will cause
 # Jenkins will run from this directory.
 # Create the JENKINS_HOME directory if it doesn't exist.
-export JENKINS_HOME=~/webpage_ws/jenkins
+export JENKINS_HOME=~/webpage_ws/jenkins/
 mkdir -p $JENKINS_HOME
 
 # Install java. We are using JRE 8.
@@ -16,7 +16,7 @@ sudo apt-get update -y || true
 sudo apt-get install -y openjdk-8-jre
 
 # Download the Jenkins .war file, if not there already
-cd ~/webpage_ws/jenkins/
+cd ~
 JENKINS_FILE="/home/user/jenkins.war"
 if [ ! -f "$JENKINS_FILE" ]; then
     wget https://updates.jenkins.io/download/war/2.303.1/jenkins.war
