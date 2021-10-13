@@ -44,11 +44,6 @@ fi
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_rsa
 
-# print the ssh keys
-cat id_rsa
-echo ''
-cat id_rsa.pub
-
 # config git
 git config --global user.name 'Jenkins Course'
 git config --global user.email 'jenkins@theconstruct.ai'
