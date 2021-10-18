@@ -5,22 +5,6 @@
 # to run in that case
 set -e
 
-# Install openssh server
-sudo apt-get update -y || true
-sudo apt-get install -y openssh-server
-
-# Config openssh server and start it
-sudo chmod 666 /etc/ssh/sshd_config
-echo "PasswordAuthentication no" >> /etc/ssh/sshd_config
-sudo service ssh restart
-
-# Make some mods so we won't run into problems
-# when connecting
-cd ~
-if [ ! -f .bash_aliases ]; then
-    mv .bash_aliases .bash_aliases.bup
-fi
-
 # Prepare ssh keys
 # Create it in the user workspace so we can store it
 cd ~/webpage_ws
