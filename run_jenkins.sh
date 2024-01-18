@@ -11,15 +11,15 @@ set -e
 export JENKINS_HOME=~/webpage_ws/jenkins/
 mkdir -p $JENKINS_HOME
 
-# Install java. We are using JRE 8.
+# Install java. We are using JRE 17.
 sudo apt-get update -y || true
-sudo apt-get install -y openjdk-8-jre
+sudo apt-get install -y openjdk-17-jre
 
 # Download the Jenkins .war file, if not there already
 cd ~
 JENKINS_FILE="/home/user/jenkins.war"
 if [ ! -f "$JENKINS_FILE" ]; then
-    wget https://get.jenkins.io/war-stable/2.346.1/jenkins.war --no-check-certificate
+    wget https://updates.jenkins.io/download/war/2.430/jenkins.war
 fi
 
 # Jenkins is about to run, but we must check if 
